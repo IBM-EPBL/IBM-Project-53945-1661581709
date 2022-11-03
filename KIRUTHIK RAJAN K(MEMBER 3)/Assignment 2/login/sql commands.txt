@@ -1,0 +1,10 @@
+create database if not exists WebLogin default character set utf8 collate utf8_general_ci;
+use WebLogin;
+
+create table if not exists accounts(
+id int(13) not null auto_increment,
+username varchar(50) not null,
+password varchar(240) not null,
+rollno number(20) not null,
+email varchar(110) not null,
+)engine=InnoDB auto_increment=2 default charset=utf8;
